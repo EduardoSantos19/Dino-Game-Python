@@ -26,8 +26,6 @@ BIRD = [pygame.image.load(os.path.join("Assets/Bird", "Bird1.png")),
 
 CLOUD = pygame.image.load(os.path.join("Assets/Other", "Cloud.png"))
 
-METEOR = pygame.image.load(os.path.join("Assets/Meteor", "Meteor.png"))
-
 BG = pygame.image.load(os.path.join("Assets/Other", "Track.png"))
 
 
