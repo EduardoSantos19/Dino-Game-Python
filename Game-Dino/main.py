@@ -188,6 +188,14 @@ def main():
         textRect.center = (1000, 40)
         SCREEN.blit(text, textRect)
 
+        if points >= 3000:
+            end_game()
+
+    def end_game():
+        nonlocal run
+        run = False
+        print("Game Over - You reached 3000 points!")
+
     def background():
         global x_pos_bg, y_pos_bg
         image_width = BG.get_width()
@@ -216,8 +224,6 @@ def main():
                 obstacles.append(LargeCactus(LARGE_CACTUS))
             elif random.randint(0, 2) == 2:
                 obstacles.append(Bird(BIRD))
-
-
 
         for obstacle in obstacles:
             obstacle.draw(SCREEN)
