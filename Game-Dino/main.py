@@ -188,13 +188,13 @@ def main():
         textRect.center = (1000, 40)
         SCREEN.blit(text, textRect)
 
-        if points >= 3000:
+        if points >= 5000:
             end_game()
 
     def end_game():
         nonlocal run
         run = False
-        print("Game Over - You reached 3000 points!")
+        print("Game Over - You reached 5000 points!")
 
     def background():
         global x_pos_bg, y_pos_bg
